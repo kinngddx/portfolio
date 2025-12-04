@@ -1,10 +1,64 @@
-import { Github, Linkedin, Mail, MapPin, Calendar } from 'lucide-react';
-
+import { useState } from 'react';
+import { Github, Linkedin, Mail, MapPin, Calendar, Award, Phone } from 'lucide-react';
 function App() {
+  const [activeTab, setActiveTab] = useState('projects');
+
+  const projects = [
+    {
+      title: "AI Voice Banking Assistant",
+      date: "October 2025",
+      description: "Voice-enabled banking system with speech recognition for hands-free operations and secure OTP-based transactions.",
+      tech: ["Python", "FastAPI", "React", "Javascript","Tailwind CSS","NLP", "JWT"],
+      highlights: [
+        "Custom NLP model with 95%+ accuracy supporting English/Hindi commands",
+        "Integrated Gemini AI for intelligent conversation",
+        "Accessible UI optimized for elderly and visually impaired users"
+      ],
+      github: "https://github.com/kinngddx/Voice-Banking-System"
+    },
+    {
+      title: "Call Center Analytics Platform",
+      date: "April 2025",
+      description: "Full-stack analytics platform with Whisper AI transcription and sentiment analysis.",
+      tech: ["React.js", "FastAPI", "PostgreSQL", "Whisper AI", "Tailwind CSS"],
+      highlights: [
+        "Built responsive UI for transcripts, sentiment trends, and multilingual views",
+        "Implemented Whisper-based transcription with high accuracy",
+        "Collaborated in a 4-member team ensuring seamless integration"
+      ],
+      github: "https://github.com/kinngddx/Team-Garud"
+    }
+  ];
+
+
+  const achievements = [
+    {
+      title: "Hacktoberfest 2025 - Super Contributor",
+      issuer: "DigitalOcean & GitHub",
+      date: "October 2025",
+      desc: "Recognized for high-quality open-source contributions during Hacktoberfest 2025. Actively contributed to multiple public repositories."
+    },
+    {
+      title: "LeetCode Top 20% Globally",
+      issuer: "LeetCode",
+      date: "Ongoing",
+      desc: "Solved 400+ problems with consistent problem-solving and strong focus on Data Structures & Algorithms."
+    },
+    {
+      title: "Prompt Engineering with Copilot",
+      issuer: "Microsoft SkillUp",
+      date: "August 2025",
+      desc: "Mastered AI prompt engineering techniques and iterative refinement with GitHub Copilot for enhanced development workflows."
+    }
+  ];
+
+
+
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <header className="border-b border-gray-210 bg-white">
+      <header className="border-b border-gray-200 bg-white">
         <div className="max-w-5xl mx-auto px-6 py-12 text-center">
           <h1 className="text-6xl font-bold text-gray-900 mb-6">
             I am Umang Chandra
@@ -27,7 +81,7 @@ function App() {
               href="https://linkedin.com/in/umang-chandra-b5324a355" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="relative group text-gray-600 hover:text-gray-910 transition-all hover:scale-110"
+              className="relative group text-gray-600 hover:text-gray-900 transition-all hover:scale-110"
               title="LinkedIn"
             >
               <Linkedin size={24} className="transition-transform" />
@@ -50,10 +104,8 @@ function App() {
         </div>
       </header>
 
-      {/* about section i can write here */}
-
-
-       <main className="max-w-5xl mx-auto px-6 py-12">
+      {/* About Section */}
+      <main className="max-w-5xl mx-auto px-6 py-12">
         <section className="mb-16">
           <div className="flex items-start gap-3 mb-6">
             <div className="w-20 h-20 bg-gray-900 rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">
@@ -77,21 +129,202 @@ function App() {
           </p>
           
           <div className="flex flex-wrap gap-2 mt-4">
-            
             <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">Python</span>
             <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">C++</span>
             <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">JavaScript</span>
             <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">React.js</span>
             <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">FastAPI</span>
             <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">PostgreSQL</span>
-            
             <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">Django</span>
             <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">Git</span>
           </div>
         </section>
+
+        {/* Navigation Tabs */}
+        <div className="border-b border-gray-200 mb-8">
+          <nav className="flex gap-8">
+            <button
+              onClick={() => setActiveTab('projects')}
+              className={`pb-4 text-sm font-medium capitalize transition-colors ${
+                activeTab === 'projects'
+                  ? 'border-b-2 border-gray-900 text-gray-900'
+                  : 'text-gray-500 hover:text-gray-700'
+              }`}
+            >
+              Projects
+            </button>
+            <button
+              onClick={() => setActiveTab('experience')}
+              className={`pb-4 text-sm font-medium capitalize transition-colors ${
+                activeTab === 'experience'
+                  ? 'border-b-2 border-gray-900 text-gray-900'
+                  : 'text-gray-500 hover:text-gray-700'
+              }`}
+            >
+              Experience
+            </button>
+            <button
+              onClick={() => setActiveTab('achievements')}
+              className={`pb-4 text-sm font-medium capitalize transition-colors ${
+                activeTab === 'achievements'
+                  ? 'border-b-2 border-gray-900 text-gray-900'
+                  : 'text-gray-500 hover:text-gray-700'
+              }`}
+            >
+              Achievements
+            </button>
+          </nav>
+        </div>
+
+        {/* Projects Tab Content */}
+        {activeTab === 'projects' && (
+          <section>
+            <div className="space-y-8">
+              {projects.map((project, idx) => (
+                <article key={idx} className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
+                  <div className="flex justify-between items-start mb-3">
+                    <h3 className="text-xl font-semibold text-gray-900">{project.title}</h3>
+                    <span className="text-sm text-gray-500">{project.date}</span>
+                  </div>
+                  
+                  <p className="text-gray-700 mb-4">{project.description}</p>
+                  
+                  <ul className="space-y-2 mb-4">
+                    {project.highlights.map((highlight, i) => (
+                      <li key={i} className="text-sm text-gray-600 flex items-start">
+                        <span className="mr-2">•</span>
+                        <span>{highlight}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tech.map((tech, i) => (
+                      <span key={i} className="px-2 py-1 bg-gray-50 text-gray-600 rounded text-xs border border-gray-200">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  
+                  <a href={project.github} target="_blank" rel="noopener noreferrer"
+                     className="inline-flex items-center gap-2 text-sm text-gray-900 hover:underline">
+                    <Github size={16} />
+                    View Code
+                  </a>
+                </article>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Experience Tab */}
+        {activeTab === 'experience' && (
+          <section>
+            <p className="text-gray-600 text-center py-8">Experience section coming soon...</p>
+          </section>
+        )}
+
+        {/* Achievements Tab */}
+        {activeTab === 'achievements' && (
+          <section>
+    <div className="space-y-6">
+      {achievements.map((achievement, idx) => (
+        <article key={idx} className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
+          <div className="flex items-start gap-3">
+            <Award className="text-gray-400 flex-shrink-0 mt-1" size={24} />
+            <div className="flex-1">
+              <div className="flex justify-between items-start mb-2">
+                <h3 className="text-lg font-semibold text-gray-900">{achievement.title}</h3>
+                <span className="text-sm text-gray-500">{achievement.date}</span>
+              </div>
+              <p className="text-gray-600 mb-2 font-medium">{achievement.issuer}</p>
+              <p className="text-gray-700">{achievement.desc}</p>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    {/* Extracurricular Activities */}
+    <div className="mt-8 bg-gray-100 rounded-lg p-6">
+      <h3 className="text-xl font-semibold text-gray-900 mb-4">Extracurricular Activities</h3>
+      <div className="space-y-4">
+        <div>
+          <p className="font-medium text-gray-900">Technical Member, SPIC MACAY</p>
+          <p className="text-sm text-gray-600">2024 – Present</p>
+          <p className="text-gray-700 mt-1">Contributed to technical operations during cultural events, including audio-visual setup and digital support for classical arts initiatives.</p>
+        </div>
+        <div>
+          <p className="font-medium text-gray-900">Event Coordinator, Sports Fest & Innovision Technical Fest</p>
+          <p className="text-sm text-gray-600">2024 – 2025</p>
+          <p className="text-gray-700 mt-1">Led event logistics and coordinated activities for 300+ participants, ensuring smooth execution of multiple sports and technical events.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+          
+        )}
+
+
+
+        {/* Contact Section */}
+        <section className="mt-16 pt-8 border-t border-gray-200">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            <a 
+              href="mailto:umangchandra2023@gmail.com"
+              className="flex items-center gap-3 p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors group"
+            >
+              <Mail size={20} className="text-gray-600 group-hover:text-gray-900 transition-colors" />
+              <span className="text-gray-900">umangchandra2023@gmail.com</span>
+            </a>
+            <a 
+              href="tel:+918470901180"
+              className="flex items-center gap-3 p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors group"
+            >
+              <Phone size={20} className="text-gray-600 group-hover:text-gray-900 transition-colors" />
+              <span className="text-gray-900">(+91) 8470901180</span>
+            </a>
+          </div>
+        </section>
+
+
       </main>
 
-      
+      {/* Footer */}
+      <footer className="border-t border-gray-200 mt-16">
+        <div className="max-w-5xl mx-auto px-6 py-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-gray-600 text-sm">
+              © 2025 Umang Chandra. All rights reserved.
+            </p>
+            <div className="flex gap-6">
+              <a 
+                href="https://github.com/kinngddx" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+              >
+                <Github size={20} />
+              </a>
+              <a 
+                href="https://linkedin.com/in/umang-chandra-b5324a355" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+              >
+                <Linkedin size={20} />
+              </a>
+              <a 
+                href="mailto:umangchandra2023@gmail.com"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+              >
+                <Mail size={20} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
