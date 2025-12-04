@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <header className="border-b border-gray-200 bg-white">
+      <header className="border-b border-gray-210 bg-white">
         <div className="max-w-5xl mx-auto px-6 py-12 text-center">
           <h1 className="text-6xl font-bold text-gray-900 mb-6">
             I am Umang Chandra
@@ -27,7 +27,7 @@ function App() {
               href="https://linkedin.com/in/umang-chandra-b5324a355" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="relative group text-gray-600 hover:text-gray-900 transition-all hover:scale-110"
+              className="relative group text-gray-600 hover:text-gray-910 transition-all hover:scale-110"
               title="LinkedIn"
             >
               <Linkedin size={24} className="transition-transform" />
