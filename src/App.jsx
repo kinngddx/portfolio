@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, MapPin, Calendar } from 'lucide-react';
 
 function App() {
   return (
@@ -49,6 +49,49 @@ function App() {
           </div>
         </div>
       </header>
+
+      {/* about section i can write here */}
+
+
+       <main className="max-w-5xl mx-auto px-6 py-12">
+        <section className="mb-16">
+          <div className="flex items-start gap-3 mb-6">
+            <div className="w-20 h-20 bg-gray-900 rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">
+              UC
+            </div>
+            <div className="pt-2">
+              <div className="flex items-center gap-2 text-gray-600 mb-2">
+                <MapPin size={16} />
+                <span>National Institute of Technology, Rourkela</span>
+              </div>
+              <div className="flex items-center gap-2 text-gray-600">
+                <Calendar size={16} />
+                <span>B.Tech in Mechanical Engineering | CGPA: 7.96</span>
+              </div>
+            </div>
+          </div>
+          
+          <p className="text-lg text-gray-700 leading-relaxed mb-4">
+            Full-stack developer passionate about building scalable web applications with modern technologies. 
+            Specialized in AI integration, voice-enabled systems, and creating accessible user experiences.
+          </p>
+          
+          <div className="flex flex-wrap gap-2 mt-4">
+            
+            <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">Python</span>
+            <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">C++</span>
+            <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">JavaScript</span>
+            <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">React.js</span>
+            <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">FastAPI</span>
+            <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">PostgreSQL</span>
+            
+            <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">Django</span>
+            <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">Git</span>
+          </div>
+        </section>
+      </main>
+
+      
     </div>
   );
 }
