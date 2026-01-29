@@ -142,11 +142,10 @@ function App() {
           
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
             Full-stack developer passionate about building scalable web applications with modern technologies. 
-            Specialized in AI integration, voice-enabled systems, and creating data-driven judicial management tools.
           </p>
           
           <div className="flex flex-wrap gap-2 mt-4">
-            {["Python", "C++", "JavaScript", "TypeScript", "React.js", "Next.js", "PostgreSQL", "MongoDB", "Git"].map(skill => (
+            {["C++", "Python", "JavaScript", "TypeScript", "React.js", "Next.js", "PostgreSQL","Competitive Programming"].map(skill => (
               <span key={skill} className="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm">{skill}</span>
             ))}
           </div>
