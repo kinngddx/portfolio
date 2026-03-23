@@ -38,7 +38,7 @@ function App() {
         "Implemented secure email verification and user onboarding using Resend API",
         "Built type-safe Mongoose operations with comprehensive error handling"
       ],
-      github: "https://github.com/kinngddx", // Replace with specific repo if available
+      github: "https://github.com/kinngddx", // Replace with specific repo if available i will do it bro
       live: "https://mystery-message-kappa.vercel.app/"
     },
     {
