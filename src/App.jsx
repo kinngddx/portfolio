@@ -170,7 +170,7 @@ function App() {
           </nav>
         </div>
 
-        {/* Projects Tab Content */}
+        {/* Projects Tab Content thoda aur kaam kro */}
         {activeTab === 'projects' && (
           <section className="space-y-8">
             {projects.map((project, idx) => (
