@@ -16,6 +16,28 @@ function App() {
 
   const projects = [
     {
+  title: "GoalTrack – Enterprise Goal Management Portal",
+  date: "May 2026",
+  description:
+    "Enterprise-grade goal management and performance tracking platform with role-based workflows, approvals, audit logging, and quarterly check-ins.",
+  tech: [
+    "Next.js 15",
+    "TypeScript",
+    "Prisma",
+    "PostgreSQL",
+    "Clerk",
+    "Tailwind CSS",
+    "Resend API"
+  ],
+  highlights: [
+    "Engineered a secure Role-Based Access Control (RBAC) system using Clerk with JWT-based protected routing for multi-role management",
+    "Architected a scalable PostgreSQL schema using Prisma ORM with 7+ relational models, approval workflows, and enterprise-grade audit logging",
+    "Built automated approval pipelines, quarterly check-ins, and transactional email notifications optimized for Vercel serverless deployment"
+  ],
+  github: "https://github.com/kinngddx", // replace later
+  live: "https://your-goaltrack-demo.vercel.app" // replace later
+},
+    {
       title: "NyayaFlow – AI-Powered Court Management System",
       date: "January 2026",
       description: "A full-stack platform to automate court scheduling via an AI engine that prioritizes cases based on severity and urgency.",
