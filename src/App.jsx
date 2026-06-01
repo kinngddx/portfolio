@@ -34,7 +34,7 @@ function App() {
     "Architected a scalable PostgreSQL schema using Prisma ORM with 7+ relational models, approval workflows, and enterprise-grade audit logging",
     "Built automated approval pipelines, quarterly check-ins, and transactional email notifications optimized for Vercel serverless deployment"
   ],
-  github: "https://github.com/kinngddx", // replace later
+  github: "https://github.com/kinngddx/AtomQuest", // replace later
   live: "https://your-goaltrack-demo.vercel.app" // replace later
 },
     {
@@ -47,7 +47,7 @@ function App() {
         "Built an interactive analytics dashboard using Recharts to visualize case clearance rates",
         "Developed dynamic redistribution systems for judge unavailability"
       ],
-      github: "https://github.com/kinngddx", // Replace with specific repo if available
+      github: "https://github.com/kinngddx/court-case-schedulling-system", // Replace with specific repo if available
       live: "https://court-case-schedulling-system-g4jj.vercel.app/dashboard"
     },
     {
@@ -60,7 +60,7 @@ function App() {
         "Implemented secure email verification and user onboarding using Resend API",
         "Built type-safe Mongoose operations with comprehensive error handling"
       ],
-      github: "https://github.com/kinngddx", // Replace with specific repo if available i will do it bro
+      github: "https://github.com/kinngddx/next.js-ngl", // Replace with specific repo if available i will do it bro
       live: "https://mystery-message-kappa.vercel.app/"
     },
     {
