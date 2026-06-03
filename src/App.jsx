@@ -15,6 +15,29 @@ function App() {
   const [activeTab, setActiveTab] = useState('projects');
 
   const projects = [
+
+     {
+      title: "PolyTrade – Decentralized Prediction Market Platform",
+      date: "February 2026",
+      description: "A high-performance prediction market platform (Polymarket clone) featuring a custom orderbook engine and decentralized trade settlement.",
+      tech: [
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "Prisma ORM",
+        "PostgreSQL",
+        "React",
+        "Vite",
+        "Solana"
+      ],
+      highlights: [
+        "Engineered a custom orderbook matching engine for Yes/No token trading, implementing real-time trade settlement and automated split/merge mechanics",
+        "Implemented row-level locked PostgreSQL transactions to ensure race-condition-free order execution and 100% data consistency",
+        "Integrated Solana (Phantom/Solflare) for secure Web3 authentication and architected the system using Turborepo for scalable monorepo management"
+      ],
+      github: "https://github.com/kinngddx/Market-Prediction", 
+    },
+
     {
   title: "GoalTrack – Enterprise Goal Management Portal",
   date: "May 2026",
