@@ -52,6 +52,9 @@ function App() {
     "Tailwind CSS",
     "Resend API"
   ],
+
+
+  
   highlights: [
     "Engineered a secure Role-Based Access Control (RBAC) system using Clerk with JWT-based protected routing for multi-role management",
     "Architected a scalable PostgreSQL schema using Prisma ORM with 7+ relational models, approval workflows, and enterprise-grade audit logging",
