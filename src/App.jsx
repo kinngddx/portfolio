@@ -19,7 +19,7 @@ function App() {
      {
       title: "PolyTrade – Decentralized Prediction Market Platform",
       date: "February 2026",
-      description: "A high-performance prediction market platform (Polymarket clone) featuring a custom orderbook engine and decentralized trade settlement.",
+      description: "A high-performance prediction market platform (Polymarket-type) featuring a custom orderbook engine and decentralized trade settlement.",
       tech: [
         "TypeScript",
         "Node.js",
