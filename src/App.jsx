@@ -16,6 +16,8 @@ function App() {
 
   const projects = [
 
+
+
      {
       title: "PolyTrade – Decentralized Prediction Market Platform",
       date: "February 2026",
