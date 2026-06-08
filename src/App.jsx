@@ -103,18 +103,28 @@ function App() {
       ],
       github: "https://github.com/kinngddx/Voice-Banking-System"
     },
-    {
-      title: "Call Center Analytics Platform",
-      date: "April 2025",
-      description: "Full-stack analytics platform with Whisper AI transcription and sentiment analysis.",
-      tech: ["React.js", "FastAPI", "PostgreSQL", "Whisper AI", "Tailwind CSS"],
-      highlights: [
-        "Built responsive UI for transcripts, sentiment trends, and multilingual views",
-        "Implemented Whisper-based transcription with high accuracy",
-        "Collaborated in a 4-member team ensuring seamless integration"
-      ],
-      github: "https://github.com/kinngddx/Team-Garud"
-    }
+  {
+title: "Customer Churn Prediction",
+date: "May 2026",
+description:
+"Machine learning project for predicting customer churn using a Telco dataset, featuring data preprocessing, exploratory analysis, and classification modeling.",
+tech: [
+"Python",
+"Pandas",
+"NumPy",
+"Matplotlib",
+"Seaborn",
+"Scikit-learn",
+"Jupyter Notebook"
+],
+highlights: [
+"Built a Random Forest-based customer churn prediction model on a Telco dataset containing 7,000+ customer records, achieving 78.5% classification accuracy",
+"Cleaned and preprocessed real-world customer data using Pandas, handled missing values, encoded categorical features, and prepared data for machine learning",
+"Performed exploratory data analysis and model evaluation using Confusion Matrix, ROC Curve, and Feature Importance plots to identify key churn drivers"
+],
+github: "https://github.com/kinngddx/Customer-churn-Project"
+},
+
   ];
 
   const achievements = [
