@@ -91,6 +91,31 @@ function App() {
       github: "https://github.com/kinngddx/next.js-ngl", // Replace with specific repo if available i will do it bro
       live: "https://mystery-message-kappa.vercel.app/"
     },
+
+    {
+  title: "VoiceConnect – AI-Powered Customer Support Video Platform",
+  date: "June 2026",
+  description: "A full-stack customer support video calling platform with real-time communication, session management, recording workflows, and automated post-call processing.",
+  tech: [
+    "Next.js",
+    "TypeScript",
+    "React",
+    "LiveKit",
+    "Prisma ORM",
+    "SQLite",
+    "Tailwind CSS",
+    "Docker",
+    "n8n"
+  ],
+  highlights: [
+    "Built a real-time video and audio communication platform using LiveKit, supporting agent-customer sessions, chat messaging, media controls, and room-based access management",
+    "Designed secure backend APIs for token generation, session lifecycle management, webhook processing, participant tracking, and recording metadata persistence using Prisma ORM",
+    "Integrated n8n workflow automation to trigger post-call actions through webhooks, enabling automated notifications, logging, and future workflow extensibility"
+  ],
+  github: "https://github.com/kinngddx/VideoCall-Zoom",
+},
+
+
     {
       title: "AI Voice Banking Assistant",
       date: "October 2025",
