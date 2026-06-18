@@ -149,6 +149,31 @@ highlights: [
 ],
 github: "https://github.com/kinngddx/Customer-churn-Project"
 },
+{
+  title: "Real-Time WebSocket Kanban Board",
+  date: "June 2026",
+  description:
+    "A full-stack real-time Kanban board with collaborative task management, drag-and-drop workflows, WebSocket synchronization, and comprehensive automated testing.",
+  tech: [
+    "React 18",
+    "Vite",
+    "Node.js",
+    "Express",
+    "Socket.IO",
+    "Vitest",
+    // "React Testing Library",
+    // "Playwright",
+    "CSS"
+  ],
+  highlights: [
+    "Built a real-time collaborative Kanban board using Socket.IO, enabling instant task creation, updates, deletion, and status synchronization across multiple connected clients",
+    "Implemented drag-and-drop task management with priority levels, category tagging, file attachments, progress tracking, and responsive dark-themed user experience",
+    "Developed a complete testing strategy with Vitest unit and integration tests alongside Playwright end-to-end testing to ensure application reliability and user workflow validation"
+  ],
+  github: "https://github.com/kinngddx/Vyorius-Drones-Private-Limited",
+  liveDemo:
+    "https://vyorius-drones-private-limited-2fvmsgms5-kinngddxs-projects.vercel.app/"
+}
 
   ];
 
@@ -171,6 +196,7 @@ github: "https://github.com/kinngddx/Customer-churn-Project"
       date: "August 2025",
       desc: "Mastered AI prompt engineering techniques for enhanced development workflows."
     }
+
   ];
 
   return (
