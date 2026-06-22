@@ -101,7 +101,7 @@ function App() {
     "TypeScript",
     "React",
     "LiveKit",
-    "Prisma ORM",
+    
     "SQLite",
     "Tailwind CSS",
     "Docker",
