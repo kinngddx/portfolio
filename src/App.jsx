@@ -150,6 +150,13 @@ highlights: [
 github: "https://github.com/kinngddx/Customer-churn-Project"
 },
 {
+  title: "Housing Price Prediction – End-to-End Machine Learning Pipeline",
+  date: "July 2026",
+  description: "Built an end-to-end machine learning pipeline to predict California housing prices using Scikit-learn, including data preprocessing, feature engineering, and model evaluation. Deployed the trained model as a FastAPI REST API using Joblib for model serialization.",
+  tech: ["Python", "Pandas", "NumPy", "Scikit-learn", "FastAPI", "Joblib", "Jupyter Notebook"],
+  github: "https://github.com/kinngddx/House-prediction-ml-project"
+},
+{
   title: "Real-Time WebSocket Kanban Board",
   date: "June 2026",
   description:
@@ -174,6 +181,8 @@ github: "https://github.com/kinngddx/Customer-churn-Project"
   liveDemo:
     "https://vyorius-drones-private-limited-2fvmsgms5-kinngddxs-projects.vercel.app/"
 }
+
+
 
   ];
 
