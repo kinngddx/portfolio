@@ -15,6 +15,28 @@ function App() {
   const [activeTab, setActiveTab] = useState('projects');
 
   const projects = [
+    {
+  title: "GenAI-Powered Observability & Incident Automation Platform",
+  date: "Feb 2026",
+  description: "Architected a production-grade observability platform for FastAPI services using the LGTM stack (Loki, Grafana, Tempo, Prometheus) and OpenTelemetry. Developed a GenAI agent using Google Gemini 2.0 to automate incident postmortems by correlating logs, metrics, and traces.",
+  tech: [
+    "Python",
+    "FastAPI", 
+    "PostgreSQL", 
+    "Docker", 
+    "Prometheus", 
+    "Grafana", 
+    "OpenTelemetry", 
+    "Loki", 
+    "Tempo", 
+    "Google Gemini API"
+  ],
+  highlights: [
+    "Architected a production-grade observability stack using OpenTelemetry and Prometheus to enable centralized monitoring and automated alerting for distributed FastAPI services",
+    "Instrumented 7 custom RED and business metrics with real-time Grafana dashboards, demonstrating a 69% reduction in MTTR through controlled failure simulations",
+    "Engineered a Gemini 2.0-powered GenAI engine to correlate telemetry data into automated incident postmortems, reducing manual documentation effort by 90%"
+  ]
+},
 
 
 
