@@ -176,6 +176,12 @@ github: "https://github.com/kinngddx/Customer-churn-Project"
   date: "July 2026",
   description: "Built an end-to-end machine learning pipeline to predict California housing prices using Scikit-learn, including data preprocessing, feature engineering, and model evaluation. Deployed the trained model as a FastAPI REST API using Joblib for model serialization.",
   tech: ["Python", "Pandas", "NumPy", "Scikit-learn", "FastAPI", "Joblib", "Jupyter Notebook"],
+  highlights: [
+ "...",
+ "...",
+ "..."
+],
+
   github: "https://github.com/kinngddx/House-prediction-ml-project"
 },
 {
