@@ -599,8 +599,8 @@ function App() {
 
   const projects = [
     {
-      title: "GenAI-Powered Observability & Incident Automation Platform",
-      date: "Feb 2026",
+      title: "TraceIQ",
+      date: "July 2026",
       description: "Architected a production-grade observability platform for FastAPI services using the LGTM stack (Loki, Grafana, Tempo, Prometheus) and OpenTelemetry. Developed a GenAI agent using Google Gemini 2.0 to automate incident postmortems by correlating logs, metrics, and traces.",
       tech: ["Python", "FastAPI", "PostgreSQL", "Docker", "Prometheus", "Grafana", "OpenTelemetry", "Loki", "Tempo", "Google Gemini API"],
       highlights: [
@@ -908,10 +908,10 @@ function App() {
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">
                     <div>
                       <h3 className="text-xl font-bold text-zinc-900">
-                        AI Engineer Intern
+                        NIT Rourkela
                       </h3>
                       <p className="text-zinc-500 font-medium">
-                        Pinnacle Labs Private Limited
+                        Research Student
                       </p>
                     </div>
                     <span className="text-sm text-zinc-400 font-medium whitespace-nowrap">
@@ -923,26 +923,19 @@ function App() {
                     <li className="flex gap-3">
                       <span className="text-zinc-300 mt-1.5">•</span>
                       <span>
-                        Developed AI-powered microservices for automated resume parsing,
-                        text autocorrection, and Resume-JD matching, processing
-                        unstructured candidate data through an end-to-end NLP pipeline
-                        with <strong className="text-zinc-900">90%+ workflow automation</strong>.
+                        Developed an AI-powered resume intelligence platform with 3 FastAPI microservices for automated resume parsing, text autocorrection, and Resume–JD matching, streamlining candidate data processing.
                       </span>
                     </li>
                     <li className="flex gap-3">
                       <span className="text-zinc-300 mt-1.5">•</span>
                       <span>
-                        Reduced redundant model initialization through model reuse and
-                        optimized service-level resource handling.
+                       Improved Resume–JD matching effectiveness by 30% by combining semantic similarity with explicit skill coverage and interpretable classification.
                       </span>
                     </li>
                     <li className="flex gap-3">
                       <span className="text-zinc-300 mt-1.5">•</span>
                       <span>
-                        Improved Resume-JD matching effectiveness by{' '}
-                        <strong className="text-zinc-900">30%</strong> by combining
-                        semantic matching with explicit skill coverage and interpretable
-                        classification.
+                  Optimized model initialization and resource utilization through model reuse, eliminating redundant transformer loading across requests.
                       </span>
                     </li>
                   </ul>
