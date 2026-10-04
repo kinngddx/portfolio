@@ -720,25 +720,45 @@ function App() {
   ];
 
   const achievements = [
-    {
-      title: "Hacktoberfest 2025 - Super Contributor",
-      issuer: "DigitalOcean & GitHub",
-      date: "October 2025",
-      desc: "Recognized for high-quality open-source contributions during Hacktoberfest 2025."
-    },
-    {
-      title: "LeetCode Top 20% Globally",
-      issuer: "LeetCode",
-      date: "Ongoing",
-      desc: "Solved 500+ problems with consistent problem-solving and strong focus on DSA."
-    },
-    {
-      title: "Prompt Engineering with Copilot",
-      issuer: "Microsoft SkillUp",
-      date: "August 2025",
-      desc: "Mastered AI prompt engineering techniques for enhanced development workflows."
-    }
-  ];
+  {
+    title: "Hacktoberfest 2025 - Super Contributor",
+    issuer: "DigitalOcean & GitHub",
+    date: "October 2025",
+    desc: "Recognized for high-quality open-source contributions during Hacktoberfest 2025.",
+    link: "https://drive.google.com/file/d/1FrFOAaVTCETx6Nu6ltl3_L2aJNXx_LtH/view",
+    linkLabel: "View Badge"
+  },
+  {
+    title: "LeetCode - 550+ DSA Problems Solved",
+    issuer: "LeetCode",
+    date: "Jan 2025 – Present",
+    desc: "Solved 550+ problems in C++ with consistent problem-solving practice and strong focus on Data Structures and Algorithms.",
+    link: "https://leetcode.com/u/coderhack20/",
+    linkLabel: "View Profile"
+  },
+  {
+    title: "Semifinalist - ET Gen AI Hackathon",
+    issuer: "ET Gen AI Hackathon",
+    date: "March 2026",
+    desc: "Recognized as a semifinalist for developing an innovative solution in the Generative AI hackathon.",
+    link: "https://drive.google.com/file/d/1B_TBvCtw_O65lUTao4EogCo5XXF5BHM2/view",
+    linkLabel: "View Certificate"
+  },
+  {
+    title: "WorldQuant BRAIN Challenge - Bronze Level",
+    issuer: "WorldQuant",
+    date: "October 2026",
+    desc: "Achieved Bronze Level recognition in the WorldQuant BRAIN Challenge, demonstrating quantitative research and analytical problem-solving skills.",
+    link: "https://drive.google.com/file/d/1S1BCyC1lG3Gw_zg0_Be_7924aqQzrTLf/view",
+    linkLabel: "View Certificate"
+  },
+  {
+    title: "Prompt Engineering with Copilot",
+    issuer: "Microsoft SkillUp",
+    date: "August 2025",
+    desc: "Completed training in AI prompt engineering techniques for enhanced development workflows."
+  }
+];
 
   const navLinks = [
     { icon: Home, label: 'Home', href: '#top' },
@@ -968,8 +988,19 @@ function App() {
                           <span className="text-sm text-zinc-400 whitespace-nowrap ml-4">{achievement.date}</span>
                         </div>
                         <p className="text-zinc-500 mb-2 font-medium">{achievement.issuer}</p>
-                        <p className="text-zinc-600">{achievement.desc}</p>
-                      </div>
+<p className="text-zinc-600">{achievement.desc}</p>
+
+{achievement.link && (
+  <a
+    href={achievement.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 mt-4 text-sm font-medium text-zinc-700 hover:text-zinc-950 hover:underline transition-colors"
+  >
+    <ExternalLink size={15} />
+    {achievement.linkLabel || "View Credential"}
+  </a>
+)}                      </div>
                     </div>
                   </article>
                 </Reveal>
